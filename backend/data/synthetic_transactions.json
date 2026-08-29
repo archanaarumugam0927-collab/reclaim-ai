@@ -1,0 +1,502 @@
+[
+{
+"customer_id": "CUST_1001",
+"customer_name": "Aarav Sharma",
+"transaction_id": "TXN_8001",
+"amount": 2500,
+"currency": "INR",
+"failure_reason": "insufficient_funds",
+"previous_failures": 1,
+"customer_recovery_rate": 0.75
+},
+{
+"customer_id": "CUST_1002",
+"customer_name": "Priya Nair",
+"transaction_id": "TXN_8002",
+"amount": 85000,
+"currency": "INR",
+"failure_reason": "authentication_failed",
+"previous_failures": 0,
+"customer_recovery_rate": 0.88
+},
+{
+"customer_id": "CUST_1003",
+"customer_name": "Rohan Verma",
+"transaction_id": "TXN_8003",
+"amount": 650,
+"currency": "INR",
+"failure_reason": "expired_card",
+"previous_failures": 3,
+"customer_recovery_rate": 0.42
+},
+{
+"customer_id": "CUST_1004",
+"customer_name": "Ananya Iyer",
+"transaction_id": "TXN_8004",
+"amount": 12400,
+"currency": "INR",
+"failure_reason": "network_error",
+"previous_failures": 0,
+"customer_recovery_rate": 0.92
+},
+{
+"customer_id": "CUST_1005",
+"customer_name": "Vikram Patel",
+"transaction_id": "TXN_8005",
+"amount": 45000,
+"currency": "INR",
+"failure_reason": "card_declined",
+"previous_failures": 4,
+"customer_recovery_rate": 0.25
+},
+{
+"customer_id": "CUST_1006",
+"customer_name": "Sunita Rao",
+"transaction_id": "TXN_8006",
+"amount": 1200,
+"currency": "INR",
+"failure_reason": "card_declined",
+"previous_failures": 2,
+"customer_recovery_rate": 0.60
+},
+{
+"customer_id": "CUST_1007",
+"customer_name": "Karan Malhotra",
+"transaction_id": "TXN_8007",
+"amount": 95000,
+"currency": "INR",
+"failure_reason": "insufficient_funds",
+"previous_failures": 5,
+"customer_recovery_rate": 0.12
+},
+{
+"customer_id": "CUST_1008",
+"customer_name": "Meera Joshi",
+"transaction_id": "TXN_8008",
+"amount": 3400,
+"currency": "INR",
+"failure_reason": "authentication_failed",
+"previous_failures": 1,
+"customer_recovery_rate": 0.81
+},
+{
+"customer_id": "CUST_1009",
+"customer_name": "Deepak Kumar",
+"transaction_id": "TXN_8009",
+"amount": 550,
+"currency": "INR",
+"failure_reason": "network_error",
+"previous_failures": 0,
+"customer_recovery_rate": 0.95
+},
+{
+"customer_id": "CUST_1010",
+"customer_name": "Neha Gupta",
+"transaction_id": "TXN_8010",
+"amount": 28000,
+"currency": "INR",
+"failure_reason": "expired_card",
+"previous_failures": 2,
+"customer_recovery_rate": 0.55
+},
+{
+"customer_id": "CUST_1011",
+"customer_name": "Siddharth Das",
+"transaction_id": "TXN_8011",
+"amount": 7200,
+"currency": "INR",
+"failure_reason": "card_declined",
+"previous_failures": 1,
+"customer_recovery_rate": 0.68
+},
+{
+"customer_id": "CUST_1012",
+"customer_name": "Kavita Reddy",
+"transaction_id": "TXN_8012",
+"amount": 62000,
+"currency": "INR",
+"failure_reason": "card_declined",
+"previous_failures": 3,
+"customer_recovery_rate": 0.38
+},
+{
+"customer_id": "CUST_1013",
+"customer_name": "Amitabh Sen",
+"transaction_id": "TXN_8013",
+"amount": 1800,
+"currency": "INR",
+"failure_reason": "insufficient_funds",
+"previous_failures": 0,
+"customer_recovery_rate": 0.84
+},
+{
+"customer_id": "CUST_1014",
+"customer_name": "Pooja Hegde",
+"transaction_id": "TXN_8014",
+"amount": 100000,
+"currency": "INR",
+"failure_reason": "authentication_failed",
+"previous_failures": 2,
+"customer_recovery_rate": 0.70
+},
+{
+"customer_id": "CUST_1015",
+"customer_name": "Rajesh Deshmukh",
+"transaction_id": "TXN_8015",
+"amount": 890,
+"currency": "INR",
+"failure_reason": "network_error",
+"previous_failures": 4,
+"customer_recovery_rate": 0.18
+},
+{
+"customer_id": "CUST_1016",
+"customer_name": "Divya Menon",
+"transaction_id": "TXN_8016",
+"amount": 15500,
+"currency": "INR",
+"failure_reason": "expired_card",
+"previous_failures": 1,
+"customer_recovery_rate": 0.79
+},
+{
+"customer_id": "CUST_1017",
+"customer_name": "Varun Banerjee",
+"transaction_id": "TXN_8017",
+"amount": 52000,
+"currency": "INR",
+"failure_reason": "insufficient_funds",
+"previous_failures": 3,
+"customer_recovery_rate": 0.49
+},
+{
+"customer_id": "CUST_1018",
+"customer_name": "Shalini Mishra",
+"transaction_id": "TXN_8018",
+"amount": 4200,
+"currency": "INR",
+"failure_reason": "card_declined",
+"previous_failures": 0,
+"customer_recovery_rate": 0.86
+},
+{
+"customer_id": "CUST_1019",
+"customer_name": "Arjun Kapoor",
+"transaction_id": "TXN_8019",
+"amount": 78000,
+"currency": "INR",
+"failure_reason": "card_declined",
+"previous_failures": 5,
+"customer_recovery_rate": 0.08
+},
+{
+"customer_id": "CUST_1020",
+"customer_name": "Tanvi Agarwal",
+"transaction_id": "TXN_8020",
+"amount": 950,
+"currency": "INR",
+"failure_reason": "authentication_failed",
+"previous_failures": 1,
+"customer_recovery_rate": 0.73
+},
+{
+"customer_id": "CUST_1021",
+"customer_name": "Nitin Saxena",
+"transaction_id": "TXN_8021",
+"amount": 31000,
+"currency": "INR",
+"failure_reason": "network_error",
+"previous_failures": 2,
+"customer_recovery_rate": 0.64
+},
+{
+"customer_id": "CUST_1022",
+"customer_name": "Swati Choudhury",
+"transaction_id": "TXN_8022",
+"amount": 500,
+"currency": "INR",
+"failure_reason": "insufficient_funds",
+"previous_failures": 0,
+"customer_recovery_rate": 0.90
+},
+{
+"customer_id": "CUST_1023",
+"customer_name": "Harish Pillai",
+"transaction_id": "TXN_8023",
+"amount": 88000,
+"currency": "INR",
+"failure_reason": "expired_card",
+"previous_failures": 4,
+"customer_recovery_rate": 0.22
+},
+{
+"customer_id": "CUST_1024",
+"customer_name": "Bhavna Shah",
+"transaction_id": "TXN_8024",
+"amount": 6300,
+"currency": "INR",
+"failure_reason": "card_declined",
+"previous_failures": 1,
+"customer_recovery_rate": 0.77
+},
+{
+"customer_id": "CUST_1025",
+"customer_name": "Gaurav Bhatt",
+"transaction_id": "TXN_8025",
+"amount": 19500,
+"currency": "INR",
+"failure_reason": "card_declined",
+"previous_failures": 2,
+"customer_recovery_rate": 0.53
+},
+{
+"customer_id": "CUST_1026",
+"customer_name": "Ritu Singhal",
+"transaction_id": "TXN_8026",
+"amount": 4100,
+"currency": "INR",
+"failure_reason": "authentication_failed",
+"previous_failures": 0,
+"customer_recovery_rate": 0.91
+},
+{
+"customer_id": "CUST_1027",
+"customer_name": "Manish Pandey",
+"transaction_id": "TXN_8027",
+"amount": 75000,
+"currency": "INR",
+"failure_reason": "insufficient_funds",
+"previous_failures": 3,
+"customer_recovery_rate": 0.35
+},
+{
+"customer_id": "CUST_1028",
+"customer_name": "Sneha Roy",
+"transaction_id": "TXN_8028",
+"amount": 1100,
+"currency": "INR",
+"failure_reason": "network_error",
+"previous_failures": 1,
+"customer_recovery_rate": 0.82
+},
+{
+"customer_id": "CUST_1029",
+"customer_name": "Alok Nanda",
+"transaction_id": "TXN_8029",
+"amount": 36000,
+"currency": "INR",
+"failure_reason": "card_declined",
+"previous_failures": 5,
+"customer_recovery_rate": 0.05
+},
+{
+"customer_id": "CUST_1030",
+"customer_name": "Preeti Kulkarni",
+"transaction_id": "TXN_8030",
+"amount": 8900,
+"currency": "INR",
+"failure_reason": "expired_card",
+"previous_failures": 0,
+"customer_recovery_rate": 0.89
+},
+{
+"customer_id": "CUST_1031",
+"customer_name": "Vishal Bhasin",
+"transaction_id": "TXN_8031",
+"amount": 92000,
+"currency": "INR",
+"failure_reason": "card_declined",
+"previous_failures": 1,
+"customer_recovery_rate": 0.67
+},
+{
+"customer_id": "CUST_1032",
+"customer_name": "Kiran Soni",
+"transaction_id": "TXN_8032",
+"amount": 2300,
+"currency": "INR",
+"failure_reason": "authentication_failed",
+"previous_failures": 3,
+"customer_recovery_rate": 0.44
+},
+{
+"customer_id": "CUST_1033",
+"customer_name": "Tarun Mehra",
+"transaction_id": "TXN_8033",
+"amount": 48000,
+"currency": "INR",
+"failure_reason": "insufficient_funds",
+"previous_failures": 2,
+"customer_recovery_rate": 0.58
+},
+{
+"customer_id": "CUST_1034",
+"customer_name": "Ishita Dutta",
+"transaction_id": "TXN_8034",
+"amount": 750,
+"currency": "INR",
+"failure_reason": "network_error",
+"previous_failures": 0,
+"customer_recovery_rate": 0.94
+},
+{
+"customer_id": "CUST_1035",
+"customer_name": "Sanjay Varma",
+"transaction_id": "TXN_8035",
+"amount": 16000,
+"currency": "INR",
+"failure_reason": "card_declined",
+"previous_failures": 4,
+"customer_recovery_rate": 0.29
+},
+{
+"customer_id": "CUST_1036",
+"customer_name": "Nisha Tripathi",
+"transaction_id": "TXN_8036",
+"amount": 67000,
+"currency": "INR",
+"failure_reason": "expired_card",
+"previous_failures": 1,
+"customer_recovery_rate": 0.72
+},
+{
+"customer_id": "CUST_1037",
+"customer_name": "Abhishek Chawla",
+"transaction_id": "TXN_8037",
+"amount": 3200,
+"currency": "INR",
+"failure_reason": "card_declined",
+"previous_failures": 0,
+"customer_recovery_rate": 0.85
+},
+{
+"customer_id": "CUST_1038",
+"customer_name": "Leela Sundaram",
+"transaction_id": "TXN_8038",
+"amount": 83000,
+"currency": "INR",
+"failure_reason": "insufficient_funds",
+"previous_failures": 5,
+"customer_recovery_rate": 0.15
+},
+{
+"customer_id": "CUST_1039",
+"customer_name": "Gautam Kaushik",
+"transaction_id": "TXN_8039",
+"amount": 5400,
+"currency": "INR",
+"failure_reason": "authentication_failed",
+"previous_failures": 2,
+"customer_recovery_rate": 0.61
+},
+{
+"customer_id": "CUST_1040",
+"customer_name": "Radhika Merchant",
+"transaction_id": "TXN_8040",
+"amount": 22000,
+"currency": "INR",
+"failure_reason": "network_error",
+"previous_failures": 1,
+"customer_recovery_rate": 0.76
+},
+{
+"customer_id": "CUST_1041",
+"customer_name": "Rahul Grover",
+"transaction_id": "TXN_8041",
+"amount": 980,
+"currency": "INR",
+"failure_reason": "card_declined",
+"previous_failures": 3,
+"customer_recovery_rate": 0.40
+},
+{
+"customer_id": "CUST_1042",
+"customer_name": "Monika Rathi",
+"transaction_id": "TXN_8042",
+"amount": 59000,
+"currency": "INR",
+"failure_reason": "expired_card",
+"previous_failures": 0,
+"customer_recovery_rate": 0.87
+},
+{
+"customer_id": "CUST_1043",
+"customer_name": "Yashwant Sinha",
+"transaction_id": "TXN_8043",
+"amount": 13500,
+"currency": "INR",
+"failure_reason": "card_declined",
+"previous_failures": 4,
+"customer_recovery_rate": 0.31
+},
+{
+"customer_id": "CUST_1044",
+"customer_name": "Pallavi Mahajan",
+"transaction_id": "TXN_8044",
+"amount": 99500,
+"currency": "INR",
+"failure_reason": "insufficient_funds",
+"previous_failures": 1,
+"customer_recovery_rate": 0.69
+},
+{
+"customer_id": "CUST_1045",
+"customer_name": "Pranav Sethi",
+"transaction_id": "TXN_8045",
+"amount": 1400,
+"currency": "INR",
+"failure_reason": "authentication_failed",
+"previous_failures": 2,
+"customer_recovery_rate": 0.52
+},
+{
+"customer_id": "CUST_1046",
+"customer_name": "Aarti Somani",
+"transaction_id": "TXN_8046",
+"amount": 38000,
+"currency": "INR",
+"failure_reason": "network_error",
+"previous_failures": 0,
+"customer_recovery_rate": 0.93
+},
+{
+"customer_id": "CUST_1047",
+"customer_name": "Devendra Bisht",
+"transaction_id": "TXN_8047",
+"amount": 7100,
+"currency": "INR",
+"failure_reason": "card_declined",
+"previous_failures": 5,
+"customer_recovery_rate": 0.10
+},
+{
+"customer_id": "CUST_1048",
+"customer_name": "Jaya Ahluwalia",
+"transaction_id": "TXN_8048",
+"amount": 71000,
+"currency": "INR",
+"failure_reason": "expired_card",
+"previous_failures": 2,
+"customer_recovery_rate": 0.63
+},
+{
+"customer_id": "CUST_1049",
+"customer_name": "Sameer Rastogi",
+"transaction_id": "TXN_8049",
+"amount": 620,
+"currency": "INR",
+"failure_reason": "card_declined",
+"previous_failures": 1,
+"customer_recovery_rate": 0.78
+},
+{
+"customer_id": "CUST_1050",
+"customer_name": "Shruti Natarajan",
+"transaction_id": "TXN_8050",
+"amount": 44000,
+"currency": "INR",
+"failure_reason": "insufficient_funds",
+"previous_failures": 3,
+"customer_recovery_rate": 0.47
+}
+]
