@@ -126,20 +126,6 @@ export default function LoginPage() {
       </div>
 
       {/* Animation */}
-      <style jsx>{`
-        @keyframes float {
-          0%,
-          100% {
-            transform: translateY(0px);
-            opacity: 0.35;
-          }
-
-          50% {
-            transform: translateY(-18px);
-            opacity: 0.8;
-          }
-        }
-      `}</style>
     </main>
   );
 }
