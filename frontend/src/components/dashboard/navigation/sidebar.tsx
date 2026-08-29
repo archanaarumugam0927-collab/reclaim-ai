@@ -12,10 +12,13 @@ import {
   ShieldCheck,
   Users,
   Zap,
+  Check,
+  User,
 } from "lucide-react";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const navigation = [
   {
@@ -59,12 +62,13 @@ const bottomNavigation = [
   {
     label: "Settings",
     icon: Settings,
-    href: "/dashboard",
+    href: "/settings",
   },
 ];
 
 export function Sidebar() {
   const pathname = usePathname();
+  const [showWorkspace, setShowWorkspace] = useState(false);
 
   return (
     <aside className="hidden h-screen w-64 shrink-0 border-r border-ui bg-sidebar lg:flex lg:flex-col">
@@ -92,13 +96,16 @@ export function Sidebar() {
       </div>
 
       {/* Workspace */}
-      <div className="px-4 pt-5">
+      <div className="relative px-4 pt-5">
         <button
           type="button"
+          onClick={() =>
+            setShowWorkspace((value) => !value)
+          }
+          aria-expanded={showWorkspace}
           className="flex w-full cursor-pointer items-center justify-between rounded-xl border border-ui bg-card px-3 py-2.5 text-left transition-colors hover:bg-muted/50"
         >
           <div className="flex items-center gap-3">
-
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-muted text-xs font-semibold text-foreground">
               AC
             </div>
@@ -112,11 +119,66 @@ export function Sidebar() {
                 Test workspace
               </p>
             </div>
-
           </div>
 
-          <ChevronDown className="h-4 w-4 text-muted-foreground" />
+          <ChevronDown
+            className={`h-4 w-4 text-muted-foreground transition-transform ${
+              showWorkspace ? "rotate-180" : ""
+            }`}
+          />
         </button>
+
+        {/* Workspace Dropdown */}
+        {showWorkspace && (
+          <div className="absolute left-4 right-4 top-[calc(100%+8px)] z-[200] overflow-hidden rounded-xl border border-ui bg-card p-1.5 shadow-2xl">
+
+            <div className="px-3 py-2">
+              <p className="text-[9px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+                Workspace
+              </p>
+            </div>
+
+            <button
+              type="button"
+              onClick={() =>
+                setShowWorkspace(false)
+              }
+              className="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left transition-colors hover:bg-muted"
+            >
+              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-400/10 text-xs font-semibold text-emerald-400">
+                AC
+              </div>
+
+              <div className="min-w-0 flex-1">
+                <p className="truncate text-xs font-medium text-foreground">
+                  Acme Commerce
+                </p>
+
+                <p className="text-[10px] text-muted-foreground">
+                  Test workspace
+                </p>
+              </div>
+
+              <Check className="h-4 w-4 text-emerald-400" />
+            </button>
+
+            <div className="my-1 border-t border-ui" />
+
+            <Link
+  href="/settings"
+  onClick={() => {
+    setShowWorkspace(false);
+  }}
+  className="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+>
+  <Settings className="h-4 w-4" />
+
+  <span className="text-xs">
+    Workspace settings
+  </span>
+</Link>
+          </div>
+        )}
       </div>
 
       {/* Main Navigation */}
@@ -127,24 +189,23 @@ export function Sidebar() {
         </p>
 
         <div className="space-y-1">
-
           {navigation.map((item) => {
             const Icon = item.icon;
 
             const isActive =
-  item.label === "Customers"
-    ? pathname === "/customers" ||
-      pathname.startsWith("/customers/")
-    : item.label === "Transactions"
-      ? pathname === "/transactions" ||
-        pathname.startsWith("/transactions/")
-      : item.label === "Analytics"
-        ? pathname === "/analytics"
-        : item.label === "Audit Trail"
-          ? pathname === "/audit-trail"
-          : item.label === "Overview"
-            ? pathname === "/dashboard"
-            : false;
+              item.label === "Customers"
+                ? pathname === "/customers" ||
+                  pathname.startsWith("/customers/")
+                : item.label === "Transactions"
+                  ? pathname === "/transactions" ||
+                    pathname.startsWith("/transactions/")
+                  : item.label === "Analytics"
+                    ? pathname === "/analytics"
+                    : item.label === "Audit Trail"
+                      ? pathname === "/audit-trail"
+                      : item.label === "Overview"
+                        ? pathname === "/dashboard"
+                        : false;
 
             return (
               <Link
@@ -159,7 +220,6 @@ export function Sidebar() {
                     : "text-muted-foreground hover:bg-muted/50 hover:text-foreground"
                 }`}
               >
-
                 <Icon
                   className={`h-[17px] w-[17px] transition-colors ${
                     isActive
@@ -168,30 +228,23 @@ export function Sidebar() {
                   }`}
                 />
 
-                <span>
-                  {item.label}
-                </span>
+                <span>{item.label}</span>
 
                 {item.label === "AI Recovery" && (
                   <span className="ml-auto rounded-md bg-emerald-400/10 px-1.5 py-0.5 text-[9px] font-medium text-emerald-500">
                     AI
                   </span>
                 )}
-
               </Link>
             );
           })}
-
         </div>
       </nav>
 
       {/* Trust Indicator */}
       <div className="px-4 pb-4">
-
         <div className="rounded-xl border border-ui bg-card p-3">
-
           <div className="flex items-center gap-2">
-
             <ShieldCheck className="h-4 w-4 text-emerald-500" />
 
             <span className="text-xs font-medium text-foreground">
@@ -199,20 +252,16 @@ export function Sidebar() {
             </span>
 
             <span className="ml-auto h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)]" />
-
           </div>
 
           <p className="mt-1.5 pl-6 text-[10px] leading-relaxed text-muted-foreground">
             Connected and ready for recovery workflows.
           </p>
-
         </div>
-
       </div>
 
       {/* Bottom Navigation */}
       <div className="border-t border-ui px-4 py-4">
-
         {bottomNavigation.map((item) => {
           const Icon = item.icon;
 
@@ -232,7 +281,6 @@ export function Sidebar() {
                   : "text-muted-foreground hover:bg-muted/50 hover:text-foreground"
               }`}
             >
-
               <Icon
                 className={`h-[17px] w-[17px] ${
                   isActive
@@ -241,16 +289,11 @@ export function Sidebar() {
                 }`}
               />
 
-              <span>
-                {item.label}
-              </span>
-
+              <span>{item.label}</span>
             </Link>
           );
         })}
-
       </div>
-
     </aside>
   );
 }
